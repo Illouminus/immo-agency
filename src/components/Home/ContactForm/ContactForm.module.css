@@ -12,6 +12,9 @@
     border: 1px solid #ccc; /* Тонкая серая граница */
     font-size: 16px; /* Размер шрифта */
 }
+.contact_button_container {
+    width: 300px;; /* Ширина инпута */
+}
 
 .contact_button_container button {
     background-color: #FF6B00; /* Оранжевый цвет, как на картинке */
@@ -22,6 +25,7 @@
     font-size: 16px; /* Размер шрифта */
     cursor: pointer; /* Курсор в виде руки при наведении */
     transition: background-color 0.3s; /* Плавное изменение цвета */
+    width: 100%;
 }
 
 .contact_button_container button:hover {
