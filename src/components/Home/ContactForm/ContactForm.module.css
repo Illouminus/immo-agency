@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.input_container {
+    max-width: 500px; /* Ширина инпута */
+    padding: 10px 15px; /* Отступы внутри инпута */
+    border-radius: 10px; /* Скругленные углы для инпута */
+    border: 1px solid #ccc; /* Тонкая серая граница */
+    font-size: 16px; /* Размер шрифта */
+}
+
+.contact_button_container button {
+    background-color: #FF6B00; /* Оранжевый цвет, как на картинке */
+    color: white; /* Белый текст */
+    padding: 15px 30px; /* Отступы внутри кнопки */
+    border-radius: 25px; /* Скругленные углы */
+    border: none; /* Убрать стандартную границу */
+    font-size: 16px; /* Размер шрифта */
+    cursor: pointer; /* Курсор в виде руки при наведении */
+    transition: background-color 0.3s; /* Плавное изменение цвета */
+}
+
+.contact_button_container button:hover {
+    background-color: #E65A00; /* Чуть темнее оранжевый при наведении */
+}
+
+@media (max-width: 768px) {
+    .container {
+        gap: 40px;
+    }
+
+    .input_container {
+       width: 80%;
+    }
+    .contact_button_container {
+        width: 80%;
+    }
+
+    .contact_button_container button {
+       width: 100%;
+    }
+
+}
