@@ -1,0 +1,39 @@
+.container {
+    border: 2px solid #ED713C;
+    padding: 20px;
+    position: relative;
+    max-width: 350px;
+    border-radius: 30px;
+}
+
+.container h3{
+    font-weight: 800;
+    font-size: 1.4rem;
+    line-height: 1.3em;
+    letter-spacing: 1.2px;
+    text-align: center;
+    font-family: Inter, sans-serifa, sans-serif;
+    margin-bottom: 15px;
+}
+
+.container p{
+
+    text-align: center;
+    font-family: Inter, sans-serifa, sans-serif;
+
+}
+
+.number {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-color: #ED713C;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+
+
+/* ... другие стили */

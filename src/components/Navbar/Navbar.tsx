@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import cls from './Navbar.module.css';
 import Image from 'next/image';
-import logo from '../../images/img/logo.svg';
-import mobileLogo from '../../images/img/logo2.svg'
+import logo from '../../../public/images/img/logo.svg';
+import mobileLogo from '../../../public/images/img/logo2.svg'
 import {GiHamburgerMenu} from "react-icons/gi";
 import {AiOutlineClose} from "react-icons/ai";
 import { motion } from 'framer-motion';
@@ -30,8 +30,6 @@ export const Navbar = () => {
                 <Image
                     src={mobileLogo}
                     alt={'logo'}
-                    width={300}
-                    height={100}
                     className={cls.mobile_logo}
                 />
             </div>

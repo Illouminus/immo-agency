@@ -1,0 +1,23 @@
+.container {
+    background: #ffffff;
+    width: 100%;
+    margin: 0 auto;
+}
+.container h2{
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 1.3em;
+    letter-spacing: 1.2px;
+    text-align: center;
+    font-family: Inter, sans-serifa, sans-serif;
+    padding: 20px 0 30px 20px;
+}
+
+.cards_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px;
+}

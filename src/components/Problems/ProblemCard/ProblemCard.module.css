@@ -1,0 +1,32 @@
+.container {
+    border-radius: 30px;
+    height: 260px;
+    overflow: hidden;
+    max-width: 612px;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    min-width: 400px;
+}
+
+.list li {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+.list li::before{
+    content: '';  /* Добавьте это */
+    display: inline-block;  /* Добавьте это */
+    margin-right: 8px;  /* Добавьте это */
+    height: 5px;
+    width: 5px;
+    background: black;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+
+    .container h2{
+        font-size: 1.2rem;
+    }
+}
