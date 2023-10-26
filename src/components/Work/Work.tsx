@@ -7,8 +7,13 @@ export const Work = () => {
         <div className={cls.container}>
             <h2>Как мы работаем</h2>
             <div className={cls.cards_container}>
-                {workSteps.map((step) => (
-                    <WorkCard title={step.title} number={step.number} description={step.description} />
+                {workSteps.map((step, index) => (
+                    <WorkCard
+                        key={index}
+                        title={step.title}
+                        number={step.number}
+                        description={step.description}
+                    />
                 ))}
             </div>
 

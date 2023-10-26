@@ -7,8 +7,13 @@ export const Problems = () => {
         <div className={cls.container}>
             <h2> Мы решим за вас проблемы если </h2>
             <div className={cls.card_container}>
-                {problems.map((card) => (
-                    <ProblemCard title={card.title} image={card.image} list={card.list} />
+                {problems.map((card, index) => (
+                    <ProblemCard
+                        key={index}
+                        title={card.title}
+                        image={card.image}
+                        list={card.list}
+                    />
                 ))}
             </div>
 
