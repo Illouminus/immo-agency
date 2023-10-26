@@ -1,0 +1,18 @@
+.container {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container h2 {
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 1.3em;
+    letter-spacing: 1.2px;
+    text-align: center;
+    font-family: Inter, sans-serifa, sans-serif;
+}
+
+.container p{
+    margin-top: 20px;
+    font-size: 1.2rem;
+}

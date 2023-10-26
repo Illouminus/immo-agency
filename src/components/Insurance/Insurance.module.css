@@ -1,0 +1,67 @@
+.container {
+    background: #ffffff;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.container h2{
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 1.3em;
+    letter-spacing: 1.2px;
+    text-align: center;
+    font-family: Inter, sans-serifa, sans-serif;
+    padding: 40px 0 20px 0;
+}
+
+.insurance_container {
+    background: #F2F3F5;
+    width: 80%;
+    text-align: center;
+    height: 600px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.insurance_container p{
+    width: 80%;
+    padding-top: 20px;
+    font-size: 1.1rem;
+    line-height: 1.5em;
+}
+
+.insurance_names {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 80%;
+    margin: 40px auto;
+}
+
+.insurance_item {
+    width: 250px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .insurance_container {
+        background: transparent;
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+
+    .insurance_names {
+        gap: 60px;
+
+        margin: 40px auto;
+    }
+}

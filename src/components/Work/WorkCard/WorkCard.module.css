@@ -4,6 +4,8 @@
     position: relative;
     max-width: 350px;
     border-radius: 30px;
+    height: 150px;
+
 }
 
 .container h3{
@@ -17,7 +19,6 @@
 }
 
 .container p{
-
     text-align: center;
     font-family: Inter, sans-serifa, sans-serif;
 
@@ -35,5 +36,8 @@
 }
 
 
-
-/* ... другие стили */
+@media (max-width: 768px) {
+    .container {
+        height: auto;
+    }
+}
