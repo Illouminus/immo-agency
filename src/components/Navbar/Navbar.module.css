@@ -6,21 +6,47 @@
     z-index: 10;
 }
 
+.scrolled {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px 20px 40px;
+    z-index: 10;
+    background: white;
+
+}
+
+.scrolled .links_container {
+    display: flex;
+    gap: 20px;
+    font-weight: 700;
+    margin: 0 auto;
+    z-index: 5;
+    color: #000;
+}
 .mobile_logo {
     display: none;
 }
 
+.hide_on_scroll {
+    display: none !important;
+}
+
+.show_on_scroll {
+    display: block !important;
+}
 .logo_container {
     position: relative;
     z-index: 10;
 }
-.links_container {
+.container .links_container {
     display: flex;
     gap: 20px;
     font-weight: 700;
-    color: #fff;
     margin: 0 auto;
     z-index: 5;
+    color: #ffffff;
 }
 
 .burger {

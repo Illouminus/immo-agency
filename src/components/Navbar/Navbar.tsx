@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import cls from './Navbar.module.css';
 import Image from 'next/image';
 import logo from '../../../public/images/img/logo.svg';
@@ -10,13 +10,27 @@ import { motion } from 'framer-motion';
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [isTop, setIsTop] = useState(true);
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
+    useEffect(() => {
+        const onScroll = () => {
+            const scrollPos = window.scrollY || document.documentElement.scrollTop;
+            setIsTop(scrollPos < window.innerHeight);  // замените <= на <
+        };
+
+        window.addEventListener('scroll', onScroll);
+
+        return () => {
+            window.removeEventListener('scroll', onScroll);
+        };
+    }, []);
+
 
     return (
-        <div className={cls.container}>
+        <nav className={isTop ? cls.container : cls.scrolled}>
             <div className={cls.burger} onClick={toggleMenu}>
                 {menuOpen ? <AiOutlineClose /> : <GiHamburgerMenu />}
             </div>
@@ -25,13 +39,14 @@ export const Navbar = () => {
                     src={logo}
                     alt={'logo'}
                     width={200}
-                    className={cls.full_logo}
+                    className={`${cls.full_logo} ${!isTop && cls.hide_on_scroll}`}
                 />
                 <Image
                     src={mobileLogo}
                     alt={'logo'}
-                    className={cls.mobile_logo}
+                    className={`${cls.mobile_logo} ${!isTop && cls.show_on_scroll}`}
                 />
+
             </div>
             <motion.div
                 className={`${cls.links_container} ${menuOpen ? cls.active : ''}`}>
@@ -40,6 +55,6 @@ export const Navbar = () => {
                 <a>Договор</a>
                 <a>Контакты</a>
             </motion.div>
-        </div>
+        </nav>
     );
 };
