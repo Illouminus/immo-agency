@@ -63,13 +63,19 @@
     .insurance_names {
         gap: 60px;
         margin: 40px auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-
     .insurance_container p{
         width: 100%;
         padding-top: 20px;
         font-size: 1.1rem;
         line-height: 1.5em;
         text-align: justify;
+    }
+    .insurance_item {
+        width: 80%;
     }
 }
