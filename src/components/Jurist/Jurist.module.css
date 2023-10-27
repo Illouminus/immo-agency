@@ -1,0 +1,119 @@
+.container {
+    background: #ffffff;
+    padding: 50px 0;
+}
+
+.container h2{
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 1.3em;
+    letter-spacing: 1.2px;
+    text-align: center;
+    font-family: Inter, sans-serifa, sans-serif;
+    padding: 40px 0 20px 0;
+}
+
+.container p{
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: Inter, sans-serifa, sans-serif;
+}
+
+.schema_block {
+    width: 80%;
+}
+.proprety {
+    height: 80px;
+    background: #474A57;
+    width: 200px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-right: 20px;
+}
+
+.agency {
+    height: 80px;
+    background: #E65A00;
+    width: 200px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-right: 20px;
+}
+
+.schema_block {
+    display: flex;
+    align-items: center;
+    margin: 50px auto;
+}
+.arrow {
+    margin: 0 20px;
+}
+
+.docs_property {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.docs_property_item {
+    display: flex;
+    align-items: center;
+    width: 220px;
+    gap: 10px;
+    border: 1px solid #E65A00;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 600;
+    height: 40px;
+}
+
+.arrowDown {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .container p{
+        text-align: justify;
+        padding: 20px;
+        font-size: 1.1rem;
+    }
+
+    .schema_block {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .arrowLeft,
+    .arrowRight{
+        display: none;
+    }
+    .arrowDown {
+        display: inline;
+    }
+    .proprety {
+        margin: 0 auto;
+        height: 40px;
+        font-size: 1.1rem;
+        width: 80%;
+    }
+    .agency {
+        margin: 0 auto;
+        height: 40px;
+        font-size: 1.1rem;
+        width: 80%;
+    }
+}

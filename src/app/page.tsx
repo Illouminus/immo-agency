@@ -3,6 +3,7 @@ import {Problems} from "@/components/Problems/Problems";
 import {Work} from "@/components/Work/Work";
 import {Advertisement} from "@/components/Advertisment/Advertisement";
 import {Insurance} from "@/components/Insurance/Insurance";
+import {Jurist} from "@/components/Jurist/Jurist";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Work />
         <Advertisement />
         <Insurance />
+        <Jurist />
     </main>
   )
 }
