@@ -44,6 +44,7 @@ export const Navbar = () => {
                 <Image
                     src={mobileLogo}
                     alt={'logo'}
+                    height={60}
                     className={`${cls.mobile_logo} ${!isTop && cls.show_on_scroll}`}
                 />
 
