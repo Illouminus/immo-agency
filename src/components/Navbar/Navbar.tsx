@@ -7,10 +7,13 @@ import mobileLogo from '../../../public/images/img/logo2.svg'
 import {GiHamburgerMenu} from "react-icons/gi";
 import {AiOutlineClose} from "react-icons/ai";
 import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
+
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [isTop, setIsTop] = useState(true);
+    const [activeLink, setActiveLink] = useState('');
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
@@ -19,6 +22,9 @@ export const Navbar = () => {
         const onScroll = () => {
             const scrollPos = window.scrollY || document.documentElement.scrollTop;
             setIsTop(scrollPos < window.innerHeight);  // замените <= на <
+            if (scrollPos <= 0) {
+                setActiveLink('');
+            }
         };
 
         window.addEventListener('scroll', onScroll);
@@ -51,10 +57,59 @@ export const Navbar = () => {
             </div>
             <motion.div
                 className={`${cls.links_container} ${menuOpen ? cls.active : ''}`}>
-                <a>Как мы работаем</a>
-                <a>Стоимость</a>
-                <a>Договор</a>
-                <a>Контакты</a>
+                <Link
+                    activeClass="active"
+                    to="work"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={600}
+                    className={activeLink === 'work' ? cls.activeLink : ''}
+                    onClick={() => { setActiveLink('work'); setMenuOpen(false); }}
+                    onSetActive={() => setActiveLink('work')}
+                >
+                    Как мы работаем
+                </Link>
+                <Link
+                    activeClass="active"
+                    to="insurance"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={600}
+                    className={activeLink === 'insurance' ? cls.activeLink : ''}
+                    onClick={() => { setActiveLink('insurance'); setMenuOpen(false); }}
+                    onSetActive={() => setActiveLink('insurance')}
+                >
+                    Страховка
+                </Link>
+                <Link
+                    activeClass="active"
+                    to="accord"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={600}
+                    className={activeLink === 'accord' ? cls.activeLink : ''}
+                    onClick={() => { setActiveLink('accord'); setMenuOpen(false); }}
+                    onSetActive={() => setActiveLink('accord')}
+                >
+                    Договор
+                </Link>
+                <Link
+                    activeClass="active"
+                    to="contacts"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={600}
+                    className={activeLink === 'contacts' ? cls.activeLink : ''}
+                    onClick={() => { setActiveLink('contacts'); setMenuOpen(false); }}
+                    onSetActive={() => setActiveLink('contacts')}
+                >
+                    Контакты
+                </Link>
+
             </motion.div>
         </nav>
     );

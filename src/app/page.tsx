@@ -4,6 +4,7 @@ import {Work} from "@/components/Work/Work";
 import {Advertisement} from "@/components/Advertisment/Advertisement";
 import {Insurance} from "@/components/Insurance/Insurance";
 import {Jurist} from "@/components/Jurist/Jurist";
+import {Contacts} from "@/components/Contacts/Contacts";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Advertisement />
         <Insurance />
         <Jurist />
+        <Contacts />
     </main>
   )
 }

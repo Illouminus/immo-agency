@@ -56,6 +56,10 @@
     cursor: pointer;
 }
 
+.activeLink {
+    border-bottom: 1px solid #E65A00;
+}
+
 @media (max-width: 768px) {
     .container {
         min-height: 48px;
@@ -107,4 +111,9 @@
     .links_container a {
         color: black;
     }
+
+    .activeLink {
+        border: none;
+    }
+
 }

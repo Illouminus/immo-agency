@@ -9,7 +9,7 @@ import maks from '../../../public/images/Insurance/maks.png'
 import sber from '../../../public/images/Insurance/sber.png'
 export const Insurance = () => {
     return (
-        <div className={cls.container}>
+        <div className={cls.container} id={"insurance"}>
             <div className={cls.insurance_container}>
                 <h2>Страхование объекта </h2>
                 <p>
