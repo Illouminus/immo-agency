@@ -3,6 +3,7 @@
     padding: 40px 60px;
     display: flex;
     justify-content: center;
+
 }
 
 .container h2{
@@ -19,7 +20,7 @@
     background: #F2F3F5;
     width: 80%;
     text-align: center;
-    height: 600px;
+    height: auto;
     border-radius: 30px;
     display: flex;
     flex-direction: column;

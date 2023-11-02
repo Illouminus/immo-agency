@@ -8,17 +8,20 @@
 .contact_container {
     background: #ED713C;
     width: 60%;
-    height: 250px;
     border-radius: 40px;
     display: flex;
     padding: 20px;
+    height: auto;
+    align-items: center;
 }
 
 .cat_container {
     width: 50%;
+    height: auto;
 }
 .contacts_container {
     width: 50%;
+    height: auto;
 }
 
 .contacts_container h2{
