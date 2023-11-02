@@ -37,6 +37,7 @@ export const ContactForm = () => {
                         backgroundPosition: submitStatus ? 'left' : 'right'
                     }}
                     transition={{ duration: 0.5 }}
+                    className={cls.submition_button}
                 >
                     {submitStatus === 'success' ? <FaCheck /> : submitStatus === 'failure' ? <FaTimes /> : 'Оставить заявку'}
                 </motion.button>

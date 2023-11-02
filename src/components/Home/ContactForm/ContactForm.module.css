@@ -34,6 +34,12 @@
     background-color: #E65A00; /* Чуть темнее оранжевый при наведении */
 }
 
+.submition_button {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
 @media (max-width: 768px) {
     .container {
         gap: 40px;
