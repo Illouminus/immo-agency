@@ -7,7 +7,6 @@ import {ContactForm} from "@/components/Home/ContactForm/ContactForm";
 export const HomeComponent = () => {
     return (
         <div className={cls.container}>
-
             <Navbar />
             <DescriptionBlock />
             <ContactForm />
