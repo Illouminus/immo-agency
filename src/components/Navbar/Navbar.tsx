@@ -1,5 +1,5 @@
 "use client"
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, useRef} from 'react';
 import cls from './Navbar.module.css';
 import Image from 'next/image';
 import logo from '../../../public/images/img/logo.svg';
@@ -14,16 +14,18 @@ export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [isTop, setIsTop] = useState(true);
     const [activeLink, setActiveLink] = useState('');
-
+    const slideRef = useRef<HTMLElement>(null)
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
     useEffect(() => {
         const onScroll = () => {
-            const scrollPos = window.scrollY || document.documentElement.scrollTop;
-            setIsTop(scrollPos < window.innerHeight);  // замените <= на <
-            if (scrollPos <= 0) {
-                setActiveLink('');
+            if (slideRef.current) {
+                const scrollPos = window.scrollY || document.documentElement.scrollTop;
+                setIsTop(scrollPos < slideRef.current.offsetHeight);
+                if (scrollPos <= 0) {
+                    setActiveLink('');
+                }
             }
         };
 
@@ -34,9 +36,9 @@ export const Navbar = () => {
         };
     }, []);
 
-
     return (
-        <nav className={isTop ? cls.container : cls.scrolled}>
+
+        <nav className={isTop ? cls.container : cls.scrolled} ref={slideRef}>
             <div className={cls.burger} onClick={toggleMenu}>
                 {menuOpen ? <AiOutlineClose /> : <GiHamburgerMenu />}
             </div>
