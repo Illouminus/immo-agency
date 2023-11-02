@@ -26,6 +26,8 @@
     cursor: pointer; /* Курсор в виде руки при наведении */
     transition: background-color 0.3s; /* Плавное изменение цвета */
     width: 100%;
+    background: linear-gradient(90deg, #28a745 50%, #FF6B00 50%);
+    background-size: 200% 100%;
 }
 
 .contact_button_container button:hover {

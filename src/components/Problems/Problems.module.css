@@ -23,7 +23,7 @@
     .card_container {
         flex-wrap: nowrap;
         overflow-x: auto;
-        width: 100%;
+        width: 90%;
         padding: 10px;
     }
 }

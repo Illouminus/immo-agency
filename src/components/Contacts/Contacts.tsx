@@ -30,11 +30,17 @@ export const Contacts = () => {
                     <h2>Контакты</h2>
                     <div className={cls.contacts_info_container}>
                         <div className={cls.info_trick}>
-                            <p className={cls.tel}>+7 (499) 681-62-35</p>
-                            <p>с 9 до 21 часа по Москве</p>
+                            <p className={cls.tel}> <span>Телефон :</span> +7 (995) 507-81-33</p>
+                            <div className={cls.tel}>
+                                <span>Адрес : </span>
+                                    Бизнес центр «Ньютон Плаза» 115230,
+                                    Москва, проезд 1-й Нагатинский,
+                                    дом 10, стр 1, оф. 508
+
+                            </div>
                         </div>
                         <div className={cls.info_trick}>
-                            <p className={cls.email}>электронная почта</p>
+                            <p className={cls.email}>Электронная почта</p>
                             <p>info@maison.ru</p>
                         </div>
                     </div>

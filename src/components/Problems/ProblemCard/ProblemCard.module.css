@@ -29,4 +29,9 @@
     .container h2{
         font-size: 1.2rem;
     }
+
+    .container {
+        min-width: 350px;
+        background-repeat: no-repeat;
+    }
 }
