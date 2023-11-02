@@ -13,6 +13,7 @@ export const Problems = () => {
                         title={card.title}
                         image={card.image}
                         list={card.list}
+                        color={card.color}
                     />
                 ))}
             </div>

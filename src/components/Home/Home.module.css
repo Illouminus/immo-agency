@@ -10,5 +10,6 @@
         background-size: cover;
         min-height: 100vh;
         height: auto;
+        padding-bottom: 40px;
     }
 }

@@ -10,6 +10,7 @@ export const problems = [
     },
     {
         title: 'При владении несколькими квартирами:',
+        color: "white",
         image: '/images/img/case2.png' ,
         list: {
             first: 'Затруднения в отслеживании оплаты счетов.',
@@ -19,6 +20,7 @@ export const problems = [
     },
     {
         title: 'Если беспокоит сохранность квартиры:',
+        color: "white",
         image: '/images/img/case3.png',
         list: {
             first: 'Сомнения в надежности арендаторов.',

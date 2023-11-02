@@ -24,6 +24,21 @@
     border-radius: 50%;
 }
 
+.list_white li{
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.list_white li::before{
+    content: '';  /* Добавьте это */
+    display: inline-block;  /* Добавьте это */
+    margin-right: 8px;  /* Добавьте это */
+    height: 5px;
+    width: 5px;
+    background: white;
+    border-radius: 50%;
+}
 @media (max-width: 768px) {
 
     .container h2{
