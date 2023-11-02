@@ -10,7 +10,7 @@ export const DescriptionBlock = () => {
                 animate={{ scale: [1.2, 1] }} // сначала увеличивается до 1.1, а затем возвращается к 1
                 transition={{ type: "spring", bounce: 0.60 }} // определение времени для каждого этапа анимации
                 className={cls.title_container}>
-                <h1 className={cls.title}>Управление арендой недвижимости в Москве</h1>
+                <h1 className={cls.title}>Управление арендой</h1>
             </motion.div>
             <div className={cls.description}>
                 Вы получаете долгосрочный, стабильный, пассивный доход от сдачи в аренду

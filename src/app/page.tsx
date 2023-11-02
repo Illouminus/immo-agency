@@ -10,11 +10,11 @@ export default function Home() {
   return (
     <main>
         <HomeComponent />
-        <Problems />
+        {/*<Problems />*/}
         <Work />
         <Advertisement />
         <Insurance />
-        <Jurist />
+        {/*<Jurist />*/}
         <Contacts />
     </main>
   )

@@ -22,12 +22,6 @@ export const Insurance = () => {
                         <Image src={vks} alt={'VKS - страховая компания'} />
                     </div>
                     <div className={cls.insurance_item}>
-                        <Image src={ingo} alt={'ИнгоСтрах - страховая компания'} />
-                    </div>
-                    <div className={cls.insurance_item}>
-                        <Image src={mango} alt={'МАНГО - страховая компания'} />
-                    </div>
-                    <div className={cls.insurance_item}>
                         <Image src={sogaz} alt={'СОГАЗ - страховая компания'} />
                     </div>
                     <div className={cls.insurance_item}>
