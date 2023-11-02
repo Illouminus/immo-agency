@@ -85,19 +85,19 @@ export const Navbar = () => {
                 >
                     Страховка
                 </Link>
-                {/*<Link*/}
-                {/*    activeClass="active"*/}
-                {/*    to="accord"*/}
-                {/*    spy={true}*/}
-                {/*    smooth={true}*/}
-                {/*    offset={-70}*/}
-                {/*    duration={600}*/}
-                {/*    className={activeLink === 'accord' ? cls.activeLink : ''}*/}
-                {/*    onClick={() => { setActiveLink('accord'); setMenuOpen(false); }}*/}
-                {/*    onSetActive={() => setActiveLink('accord')}*/}
-                {/*>*/}
-                {/*    Договор*/}
-                {/*</Link>*/}
+                <Link
+                    activeClass="active"
+                    to="accord"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={600}
+                    className={activeLink === 'accord' ? cls.activeLink : ''}
+                    onClick={() => { setActiveLink('accord'); setMenuOpen(false); }}
+                    onSetActive={() => setActiveLink('accord')}
+                >
+                    Договор
+                </Link>
                 <Link
                     activeClass="active"
                     to="contacts"
