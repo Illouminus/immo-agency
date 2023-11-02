@@ -42,11 +42,20 @@
     gap: 50px;
     width: 80%;
     margin: 40px auto;
+    align-items: center;
 }
 
 .insurance_item {
     width: 250px;
 }
+
+@media (max-width: 900px) {
+    .insurance_names {
+       justify-content: center;
+    }
+}
+
+
 
 @media (max-width: 768px) {
     .container {
