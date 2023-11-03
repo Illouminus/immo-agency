@@ -14,7 +14,7 @@ export default function Home() {
         <Work />
         <Advertisement />
         <Insurance />
-        <Jurist />
+        {/*<Jurist />*/}
         <Contacts />
     </main>
   )
