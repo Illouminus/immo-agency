@@ -46,7 +46,7 @@ export const Navbar = () => {
                 <Image
                     src={logo}
                     alt={'logo'}
-                    width={200}
+                    width={300}
                     className={`${cls.full_logo} ${!isTop && cls.hide_on_scroll}`}
                 />
                 <Image

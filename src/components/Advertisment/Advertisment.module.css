@@ -1,6 +1,11 @@
 .container {
     padding: 50px 20px;
     text-align: center;
+    border-radius: 0 64px 64px 64px;
+    background: #ffffff;
+    margin: 54px auto 104px;
+    max-width: 549px;
+
 }
 
 .container h2 {

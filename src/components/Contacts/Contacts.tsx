@@ -3,7 +3,7 @@ import React from 'react';
 import cls from './Contacts.module.css'
 import { motion } from 'framer-motion';
 import Image from "next/image";
-import cat from '@/../public/images/img/cat.svg'
+import logo from '@/../public/images/img/logo.svg'
 export const Contacts = () => {
     return (
         <footer className={cls.container} id={"contacts"}>
@@ -15,9 +15,9 @@ export const Contacts = () => {
                                 transition={{ delay: 0.5, duration: 0.5 }}
                     >
                         <Image
-                            src={cat}
+                            src={logo}
                             alt={"cat"}
-                            width={200}
+                            width={400}
                         />
                     </motion.div>
                 </div>
