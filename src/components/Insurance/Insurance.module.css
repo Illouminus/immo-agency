@@ -6,6 +6,16 @@
 
 }
 
+.insurrance_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 64px 64px 64px;
+    background: #ffffff;
+    margin: 54px auto;
+    padding: 50px 20px;
+    max-width: 549px;
+}
 .container h2{
     font-weight: 800;
     font-size: 1.8rem;
@@ -40,7 +50,6 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
-    width: 80%;
     margin: 40px auto;
     align-items: center;
 }
@@ -87,5 +96,10 @@
     }
     .insurance_item {
         width: 80%;
+    }
+
+    .insurrance_card {
+
+        background: transparent;
     }
 }
