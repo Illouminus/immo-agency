@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import cls from './ContactForm.module.css'
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
+import ar from 'react-phone-number-input/locale/ru.json'
 import { motion } from 'framer-motion';
 import {FaCheck, FaTimes} from "react-icons/fa";
 import axios from 'axios';
@@ -24,8 +25,10 @@ export const ContactForm = () => {
             <PhoneInput
                 placeholder="Введите номер телефона"
                 value={value}
-                defaultCountry={"RU"}
+
                 className={cls.input_container}
+                labels={ar}
+                smartCaret={true}
                 // @ts-ignore
                 onChange={setValue}/>
             <div className={cls.contact_button_container}>
