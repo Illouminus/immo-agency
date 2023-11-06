@@ -36,7 +36,6 @@ export const Contacts = () => {
                                     Бизнес центр «Ньютон Плаза» 115230,
                                     Москва, проезд 1-й Нагатинский,
                                     дом 10, стр 1, оф. 508
-
                             </div>
                         </div>
                         <div className={cls.info_trick}>
