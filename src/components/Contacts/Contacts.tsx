@@ -41,7 +41,7 @@ export const Contacts = () => {
                         </div>
                         <div className={cls.info_trick}>
                             <p className={cls.email}>Электронная почта</p>
-                            <p>info@maison.ru</p>
+                            <p>contact@arendauchet.ru</p>
                         </div>
                     </div>
 
