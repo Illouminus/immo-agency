@@ -59,6 +59,10 @@ export const Navbar = () => {
             </div>
             <motion.div
                 className={`${cls.links_container} ${menuOpen ? cls.active : ''}`}>
+                <motion.div
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                >
                 <Link
                     activeClass="active"
                     to="work"
@@ -69,9 +73,14 @@ export const Navbar = () => {
                     className={activeLink === 'work' ? cls.activeLink : ''}
                     onClick={() => { setActiveLink('work'); setMenuOpen(false); }}
                     onSetActive={() => setActiveLink('work')}
+                    style={{
+                        cursor: "pointer"
+                    }}
                 >
                     Как мы работаем
                 </Link>
+                </motion.div>
+                <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <Link
                     activeClass="active"
                     to="insurance"
@@ -82,10 +91,14 @@ export const Navbar = () => {
                     className={activeLink === 'insurance' ? cls.activeLink : ''}
                     onClick={() => { setActiveLink('insurance'); setMenuOpen(false); }}
                     onSetActive={() => setActiveLink('insurance')}
+                    style={{
+                        cursor: "pointer"
+                    }}
                 >
                     Страховка
                 </Link>
-
+                </motion.div>
+                <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <Link
                     activeClass="active"
                     to="contacts"
@@ -96,10 +109,13 @@ export const Navbar = () => {
                     className={activeLink === 'contacts' ? cls.activeLink : ''}
                     onClick={() => { setActiveLink('contacts'); setMenuOpen(false); }}
                     onSetActive={() => setActiveLink('contacts')}
+                    style={{
+                        cursor: "pointer"
+                    }}
                 >
                     Контакты
                 </Link>
-
+                </motion.div>
             </motion.div>
         </nav>
     );

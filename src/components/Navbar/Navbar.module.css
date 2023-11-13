@@ -63,7 +63,13 @@
 
 .activeLink {
     border-bottom: 1px solid #E65A00;
+    cursor: pointer;
 }
+
+.cursor {
+    cursor: pointer;
+}
+
 
 @media (max-width: 768px) {
     .container {
