@@ -24,7 +24,7 @@
   Clone the repository and install dependencies:<br>
   <code>
     git clone https://github.com/Illouminus/immo-agency.git<br>
-    cd real-estate-site<br>
+    cd immo-agency<br>
     npm install<br>
   </code>
 </p>
