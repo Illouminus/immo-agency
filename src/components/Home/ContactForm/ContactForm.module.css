@@ -1,3 +1,16 @@
+
+.PhoneInputCountryIcon {
+	/* Заменяем фон на свою иконку */
+	background-image: url('/path/to/your/custom-icon.svg') !important;
+	/* При необходимости можно задать размеры */
+	width: 24px;
+	height: 24px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+ }
+
+
 .container {
     display: flex;
     flex-direction: column;
